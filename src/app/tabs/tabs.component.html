@@ -1,0 +1,36 @@
+<section style="margin: 2em 2em;">
+  <mat-tab-group
+    [selectedIndex]="0"
+    animationDuration="0ms"
+    class="janison-tabs"
+  >
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <span>Tab 1</span>
+        <span class="tab-badge">5</span>
+      </ng-template>
+      <div class="tab-content">
+        <div class="content1"><h1>Content 1</h1></div>
+      </div>
+    </mat-tab>
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <span>Tab 2</span>
+        <span class="tab-badge">3</span>
+      </ng-template>
+      <div class="tab-content">
+        <div class="content2"><h1>Content 2</h1></div>
+      </div>
+    </mat-tab>
+
+    <mat-tab disabled>
+      <ng-template mat-tab-label>
+        <span>Tab 3</span>
+        <span class="tab-badge">14</span>
+        <mat-icon svgIcon="Lock1"></mat-icon>
+      </ng-template>
+      <div class="tab-content"></div>
+    </mat-tab>
+  </mat-tab-group>
+</section>

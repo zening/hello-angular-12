@@ -1,16 +1,16 @@
-<hello name="{{ name }}"></hello>
+<!-- <hello name="{{ name }}"></hello> -->
 <p>
   Start editing to see some magic happen :)
 </p>
 
-<section>
-  <div class="example-label">Basic</div>
-  <div class="example-button-row">
-    <button mat-raised-button>Basic</button>
-    <button mat-raised-button color="primary">Primary</button>
-    <button mat-raised-button color="accent">Accent</button>
-    <button mat-raised-button color="warn">Warn</button>
-    <button mat-raised-button disabled>Disabled</button>
-    <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
-  </div>
-</section>
+<div>
+  <a mat-raised-button routerLink="/hello">Hello</a>
+
+  <a mat-raised-button routerLink="/tabs">Tabs</a>
+</div>
+
+<!-- <div *ngFor="let hero of heroes">
+  <a routerLink="/hero/{{hero.id}}">{{hero.name}}</a>
+</div> -->
+
+<router-outlet></router-outlet>
