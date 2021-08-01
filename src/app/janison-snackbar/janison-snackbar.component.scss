@@ -1,10 +1,11 @@
-.janison-snackbar {
+::ng-deep .mat-snack-bar-container  {
   border-radius: 12px;
+  font-family: 'Roboto Slab';
 }
 
 button {
   background-color: transparent;
-  font-family: 'Roboto Slab';
+
   font-size: 1em;
   font-weight: 400;
   color: var(--white);
@@ -12,3 +13,5 @@ button {
     color: var(--primary-2);
   }
 }
+
+// class="mat-snack-bar-container ng-tns-c275-0 ng-trigger ng-trigger-state janison-snackbar mat-snack-bar-center ng-star-inserted"
