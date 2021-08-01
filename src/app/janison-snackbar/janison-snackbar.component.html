@@ -1,7 +1,8 @@
 <div class="flex">
-  <div class="data">{{data}}</div>
+  <div class="data">{{data.message}}</div>
   <div class="dismiss" style="float: right">
-    <button mat-flat-button (click)="snackBarRef.dismiss()">
+    <button mat-flat-button (click) ="snackBarRef.dismiss()"
+    *ngIf="data.action">
       Action
       <mat-icon class="material-icons-round">
       play_arrow

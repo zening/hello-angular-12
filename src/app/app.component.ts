@@ -10,16 +10,19 @@ import { JanisonSnackbarComponent } from './janison-snackbar/janison-snackbar.co
 export class AppComponent {
   name = 'Angular ' + VERSION.major;
 
-  message = 'Pizza party!!! 🍕';
+  data = { 
+    message: 'Can’t upload file. Retry in 5 seconds.', 
+    action: 'Action'
+  };
   snackbarClass = 'janison-snackbar';
   constructor(public snackBar: MatSnackBar) {}
-  pizzaParty() {
-    this.openSnackBar(this.message, this.snackbarClass);
+  showSnackbar() {
+    this.openSnackBar(this.data, this.snackbarClass);
   }
 
-  openSnackBar(message: string, panelClass: string) {
+  openSnackBar(data: {}, panelClass: string) {
     this.snackBar.openFromComponent(JanisonSnackbarComponent, {
-      data: message,
+      data: data,
       panelClass: panelClass
       // duration: 10000
     });
