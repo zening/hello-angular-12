@@ -77,7 +77,7 @@ body {
 }
 
 /* All other component styles */
-// @import 'colours.scss';
+@import 'colours.scss';
 // @import 'buttons.scss';
 // @import 'button-menu.scss';
 // @import 'fonts.scss';
@@ -91,9 +91,3 @@ body {
 // @import 'tabs.scss';
 
 /* Add application styles & imports to this file! */
-body,
-html {
-  padding: 0 0;
-  margin: 0 0;
-  font-size: 16px;
-}

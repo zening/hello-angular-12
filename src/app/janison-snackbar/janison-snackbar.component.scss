@@ -1,0 +1,14 @@
+.janison-snackbar {
+  border-radius: 12px;
+}
+
+button {
+  background-color: transparent;
+  font-family: 'Roboto Slab';
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--white);
+  mat-icon {
+    color: var(--primary-2);
+  }
+}
