@@ -6,12 +6,12 @@ import {
 
 @Component({
   selector: 'app-janison-snackbar',
-  templateUrl: './janison-snackbar.component.html',
-  styleUrls: ['./janison-snackbar.component.scss']
+  templateUrl: './j-snackbar.component.html',
+  styleUrls: ['./j-snackbar.component.scss']
 })
-export class JanisonSnackbarComponent {
+export class JSnackbarComponent {
   constructor(
-    public snackBarRef: MatSnackBarRef<JanisonSnackbarComponent>,
+    public snackBarRef: MatSnackBarRef<JSnackbarComponent>,
     @Inject(MAT_SNACK_BAR_DATA) public data: any
   ) {}
 }
