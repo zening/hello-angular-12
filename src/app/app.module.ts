@@ -9,7 +9,7 @@ import { DemoMaterialModule } from './material-module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { TabsComponent } from './tabs/tabs.component';
-import { JanisonSnackbarComponent } from './janison-snackbar/janison-snackbar.component';
+import { JSnackbarComponent } from './j-snackbar/j-snackbar.component';
 
 @NgModule({
   imports: [
@@ -23,7 +23,7 @@ import { JanisonSnackbarComponent } from './janison-snackbar/janison-snackbar.co
     AppComponent,
     HelloComponent,
     TabsComponent,
-    JanisonSnackbarComponent
+    JSnackbarComponent
   ],
   bootstrap: [AppComponent]
 })

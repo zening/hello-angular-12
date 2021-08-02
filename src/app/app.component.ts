@@ -1,6 +1,6 @@
 import { Component, VERSION } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { JanisonSnackbarComponent } from './janison-snackbar/janison-snackbar.component';
+import { JSnackbarComponent } from './j-snackbar/j-snackbar.component';
 
 @Component({
   selector: 'my-app',
@@ -21,7 +21,7 @@ export class AppComponent {
   }
 
   openSnackBar(data: {}, panelClass: string) {
-    this.snackBar.openFromComponent(JanisonSnackbarComponent, {
+    this.snackBar.openFromComponent(JSnackbarComponent, {
       data: data,
       panelClass: panelClass
       // duration: 10000
