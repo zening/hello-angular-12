@@ -10,6 +10,10 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { JSnackbarComponent } from './j-snackbar/j-snackbar.component';
+import { CarouselComponent } from './carousel/carousel.component';
+
+// import { FlickityModule } from 'ngx-flickity';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 @NgModule({
   imports: [
@@ -17,13 +21,16 @@ import { JSnackbarComponent } from './j-snackbar/j-snackbar.component';
     BrowserAnimationsModule,
     FormsModule,
     DemoMaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // FlickityModule,
+    IvyCarouselModule
   ],
   declarations: [
     AppComponent,
     HelloComponent,
     TabsComponent,
-    JSnackbarComponent
+    JSnackbarComponent,
+    CarouselComponent
   ],
   bootstrap: [AppComponent]
 })
