@@ -1,0 +1,32 @@
+.carousel {
+  background: blueviolet;
+  width: 850px !important;
+  margin: 1em 1em;
+  overflow: hidden;
+  height: 120px !important;
+}
+
+.carousel-cell {
+  width: 300px;
+  height: 100px !important;
+  margin: 10px 10px;
+  background: #8c8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 100px;
+  font-size: 80px;
+  color: blue;
+}
+
+.carousel-arrow {
+  opacity: 0.5 !important;
+}
+.carousel-arrow-disabled {
+  opacity: 0 !important;
+}

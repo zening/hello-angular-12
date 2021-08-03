@@ -1,6 +1,6 @@
 $horizon-blue: lightblue;
 
-:host .janison-tabs {
+::ng-deep  .janison-tabs {
   /* Styles for tab labels */
   .mat-tab-label {
     min-width: 25px !important;
