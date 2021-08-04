@@ -14,7 +14,8 @@ import { CarouselComponent } from './carousel/carousel.component';
 
 // import { FlickityModule } from 'ngx-flickity';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
-import { AlertDialogComponent } from './alert-dialog/alert-dialog.component';
+import { AlertDialogComponent, AlertDialogTemplate } from './alert-dialog/alert-dialog.component';
+
 
 @NgModule({
   imports: [
@@ -32,7 +33,8 @@ import { AlertDialogComponent } from './alert-dialog/alert-dialog.component';
     TabsComponent,
     JSnackbarComponent,
     CarouselComponent,
-    AlertDialogComponent
+    AlertDialogComponent,
+    AlertDialogTemplate,
   ],
   bootstrap: [AppComponent]
 })
