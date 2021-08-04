@@ -24,7 +24,7 @@ import { AlertDialogComponent } from './alert-dialog/alert-dialog.component';
     DemoMaterialModule,
     AppRoutingModule,
     // FlickityModule,
-    IvyCarouselModule
+    IvyCarouselModule,
   ],
   declarations: [
     AppComponent,

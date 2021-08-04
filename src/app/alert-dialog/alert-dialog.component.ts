@@ -16,8 +16,8 @@ export interface DialogData {
   styleUrls: ['./alert-dialog.component.css']
 })
 export class AlertDialogComponent {
-  animal: string;
-  name: string;
+  animal: string = 'this animal';
+  name: string = 'this name';
 
   constructor(public dialog: MatDialog) {}
 
