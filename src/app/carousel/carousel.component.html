@@ -1,8 +1,17 @@
-<carousel [lightDOM]="true" [cellWidth]=400 [height]=300 [freeScroll]="false" [arrows]="true" [overflowCellsLimit]=0 [dots]="true">
+<carousel 
+[lightDOM]="true" 
+[cellWidth]=400 
+[height]=300 
+[freeScroll]="false" 
+[arrows]="true" 
+[overflowCellsLimit]=0 
+[dots]="false"
+>
 
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
+  <button mat-raised-button class="carousel-cell">
+    {{cards[0]}}</button>
+  <button mat-raised-button class="carousel-cell">{{cards[1]}}</button>
+  <button mat-raised-button class="carousel-cell"></button>
+  <button mat-raised-button class="carousel-cell"></button>
+  <button mat-raised-button class="carousel-cell"></button>
 </carousel>

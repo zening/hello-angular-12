@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { NumberInput } from '@angular/cdk/coercion';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-carousel',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
 
+  @Input() cards: number[];
+
   constructor() { }
 
   ngOnInit() {
   }
 
 }
+
